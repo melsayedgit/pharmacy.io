@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <script defer src="../js/database.js"></script>
+    <script defer src="../js/dashboard.js"></script>
+
+    <title>Pharmacy.io</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header style="justify-content: center;">
+        <img onclick="gotostock(this)" style="height: 15vh; " src="../img/logo.png" alt="">
+    
+    </header>
+
+    <div id="wlecome">Dashboard</div>
+    <div class="container" style="flex-direction: row-reverse; flex-wrap: wrap;">
+
+
+
+        <div id="loginandre"><span style="font-size: 2em; ">Add user</span>
+           
+
+               <br>
+                <label class="input"  for="username">User Name:</label> <input type="text" name="username" > 
+                <br>
+                <label class="input" for="password">PassWord:</label> <input type="password" name="password" > 
+                 <br>
+              <button class="input" onclick="addUser()" style="margin:20px" >Add</button>
+              <br>
+              <span style="color: brown;">You can delete a user By clicking on him</span>
+              <br>
+              <ul id="userlist"></ul>
+
+            </div>  
+
+
+        <div id="loginandre"><span style="font-size: 2em; ">Add a Drug</span>
+           <br>
+            <label class="input" for="drugname">Drug name:</label> 
+            <br>
+            <input type="text" name="drugname" id="drugname" placeholder="drug" > 
+            <br>
+
+            <label class="input" for="amount" >Amount</label> 
+            <br>
+            <input type="number" name="amount" placeholder="0" id="amount" > 
+            <br>
+
+            <label class="input" for="price" >Price</label> 
+            <br>
+            <input type="number" name="Price" placeholder="0" id="amount" > 
+            <br> 
+
+            
+            <span>Click on Camera to open and close it</span>
+            <br>
+            <label class="input" for="description">Drug Image:</label> 
+            <br>
+          <!--Camera-->
+            <video  autoplay="true" id="videoElement" > </video>
+           
+        
+             <br>
+            
+          <button class="input" onclick="addDrug()" style="margin:10px" type="button">Add</button>
+        </div>
+
+        
+        <div id="loginandre"><span style="font-size: 2em; ">Invoices</span>
+           
+
+
+           <br>
+           <span style="color: brown;">You can a Accept  Orders By clicking on it</span>
+           <br>
+           <ul id="Invoices"></ul>
+
+         </div>
+
+    </div>
+
+
+    
+</body>
+</html>
