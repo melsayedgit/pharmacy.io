@@ -161,7 +161,9 @@ function addDrug(){
           let drugid = result.rows.length +1;
           
             tx.executeSql("insert into items (id,name,amount,price,drugimg) values (?,?,?,?,?)"
-            ,[drugid,inputs[2].value,inputs[3].value,inputs[4].value,imgAsURL],function () {  }
+            ,[drugid,inputs[2].value,inputs[3].value,inputs[4].value,imgAsURL],function () {
+                alert(`${inputs[2].value}  drug has been added successfully, go check the stock`)
+              }
             ,function (tx,error) {
               alert("couldn't add Drug")
                 console.log(error)
