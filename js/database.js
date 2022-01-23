@@ -58,7 +58,7 @@ db.transaction(
 
 function gotologin(button){
   
-    location.href="login.html"
+    location.href="Login.html"
 
 
 }
