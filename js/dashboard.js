@@ -18,7 +18,7 @@ function logincheck(){
             } 
 
             else {
-            location.assign("login.html?logedin=false")
+            location.assign("Login.html?logedin=false")
                
 
             }
@@ -26,7 +26,7 @@ function logincheck(){
              
         }
         else{
-         location.assign("login.html?logedin=false") 
+         location.assign("Login.html?logedin=false") 
         } 
   
         },
