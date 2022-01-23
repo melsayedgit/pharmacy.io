@@ -58,7 +58,7 @@ db.transaction(
 
 function gotologin(button){
   
-    location.pathname="html/login.html"
+    location.href="login.html"
 
 
 }
@@ -66,7 +66,7 @@ function gotologin(button){
 
 function gotostock(button){
   
-    location.pathname="html/stock.html"
+    location.href="stock.html"
 
 
 }
